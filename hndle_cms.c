@@ -48,7 +48,7 @@ multi_command[argc] = NULL;
 }
 
 /**
- * buiin-cmd - function that chks
+ * buiin_cmd - function that chks
  * if the command is a builn command
  *
  * @argv: array of argumts.
