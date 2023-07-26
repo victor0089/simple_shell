@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include "vheadersh.h"
 /**
  * nonive_mod - fun that handles a cmmmd from non intective mode.
