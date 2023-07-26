@@ -34,5 +34,9 @@ int _strcmp(char *gh1, char *gh2);
 int _astoi(char *s);
 /* code4 */
 void hndmulti_cmd(char *input_buffer, char *multi_command[]);
+/* line */
+ssize_t gt_inpt(infooo_tt *);
+int _gtln(infooo_tt *, char **, size_t *);
+void sgntHndlr(int);
 /* end of shell */
 #endif
