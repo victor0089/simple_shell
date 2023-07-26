@@ -4,7 +4,7 @@
 /**
  * inerive_mod - function that handles a commmd from inive mode.
  * @bytes: num of bytes fromreding line.
- * @input_buffer:bur tt save inut line.
+ * @input_buffer: bur tt save inut line.
  * @argv_buffer: buffer that save arguments.
  * @new_arg: full path cmmmd.
  * Return: void.
@@ -60,7 +60,7 @@ wait(NULL);
 }
 /**
  * nonive_mod - fun that handles a cmmmd from non intective mode.
- * @input_buffer. buffer that save input line.
+ * @input_buffer: buffer that save input line.
  * @multi_cmmmd: arry of cmds.
  * @argv_butter: biffer that save arg.
  * @new_arg: full pah cmd.
