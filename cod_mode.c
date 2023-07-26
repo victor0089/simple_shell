@@ -72,14 +72,14 @@ char *argv_butter[], char *new_arg)
 int bytes, ffd = 0;
 char *cmmmd;
 bytes = read(STDIN_FILENO, input_buffer, MAX_INPUT_LENGTH);
-if (input_butter[bytes - 1] == '\n')
-input_butter[bytes - 1] == '\0';
+if (input_buffer[bytes - 1] == '\n')
+input_buffer[bytes - 1] == '\0';
 hndmulti_cmd(input_buffer, multi_cmmmd);
 cmmmd = multi_cmmmd[0];
 while (cmmmd != NULL)
 {
-st_tok(cmmmd, "", argv_buffer);
-exche_cute(argv_buffer, new_arg);
+st_tok(cmmmd, "", argv_butter);
+exche_cute(argv_butter, new_arg);
 cmmmd = multi_cmmmd[++ffd];
 }
 }

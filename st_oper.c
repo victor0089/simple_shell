@@ -42,7 +42,7 @@ as++;
  * @gh2: input vaslue
  * Return: gh1[i] - gh2[i]
  */
-int _strcmp(chasr *gh1, chasr *gh2)
+int _strcmp(char *gh1, char *gh2)
 {
 int as;
 as = 0;
@@ -61,7 +61,7 @@ return (0);
  * @s: string
  * Return: num
  */
-int _astoi(chasr *s)
+int _astoi(char *s)
 {
 int i, sign, num;
 if (s == NULL)
@@ -86,7 +86,8 @@ return (INT_MIN);
 num = num * 10 + sign * (s[i] - '0');
 }
 else if (num != 0)
-breask;
+break;
 i++;
 }
 return (num);
+}

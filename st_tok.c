@@ -15,7 +15,7 @@ int argc = 0;
 int lin;
 if (str != NULL)
 {
-lin = _strlin(str);
+lin = _strlen(str);
 while (lin > 0 && str[lin - 1] == ' ')
 str[--lin] = '\0';
 }
