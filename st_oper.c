@@ -1,10 +1,10 @@
 #include "vheadersh.h"
 /**
- * _strlin - function that rerns the linth of a sting
+ * _strlen - function that rerns the linth of a sting
  * @s: string
  * Return: lingth
  */
-int _strlin(char *s)
+int _strlen(char *s)
 {
 int lin = 0;
 while (*s != '\0')

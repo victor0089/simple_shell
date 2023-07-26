@@ -47,13 +47,13 @@ continue;
 }
 else if (bytes == 0)
 {
-write(STDOUT_FILENO, '\n', 1);
+write(STDOUT_FILENO, "\n", 1);
 break;
 }
 if (input_buffer[bytes - 1] == '\n')
 input_buffer[bytes - 1] = '\0';
 st_tok(input_buffer, "", argv_buffer);
-if (argv_buffer[0] == NULL || *argv_buffer[0] == '')
+if (argv_buffer[0] == NULL || *argv_buffer[0] == ' ')
 continue;
 exche_cute(argv_buffer, new_arg);
 }

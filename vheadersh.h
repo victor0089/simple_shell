@@ -16,8 +16,6 @@
 #include <limits.h>
 extern char **environ;
 
-
-void hndmulti_cmd(char *input_buffer, char *multi_command[]);
 void crt_process(char *argv_buffer[]);
 void exche_cute(char *argv_buffer[], char *new_arg);
 int buiin_cmd(char **argv);
@@ -27,14 +25,13 @@ char *argv_buffer[], char *new_arg);
 void nonive_mod(char *input_buffer, char *multi_command[],
 char *argv_buffer[], char *new_arg);
 /* code2 */
-void crt_process(char *argv_buffer[]);
-void exche_cute(char *argv_buffer[], char *new_arg);
-int buiin_cmd(char **argv);
+void ad_binprefx(char *argv[], char *new_arg);
+void st_tok(char *str, char *delimiter, char *argv[]);
 /* code 3 */
 int _strlen(char *s);
 void _strncpy(char *dest, char *scsr, int n);
 int _strcmp(char *gh1, char *gh2);
-int _atoi(char *s);
+int _astoi(char *s);
 /* code4 */
 void hndmulti_cmd(char *input_buffer, char *multi_command[]);
 /* end of shell */

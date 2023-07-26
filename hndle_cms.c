@@ -26,25 +26,26 @@ char *frst_potr = NULL;
 char *second_potr = NULL;
 int argc = 0;
 int len;
-if (input_buffer != NULL);
+if (input_buffer != NULL)
 {
 len = _strlen(input_buffer);
-while (len > 0 && input_buffer[len - 1] == '')
+while (len > 0 && input_buffer[len - 1] == ' ')
 input_buffer[--len] = '\0';
 frst_potr = input_buffer;
-while (*frst_potr && *frst_potr == '')
-first _port++;
-second _potr = frst _potr;
+while (*frst_potr && *frst_potr == ' ')
+frst_potr++;
+second_potr = frst_potr;
 while (*frst_potr != '\0')
 {
 if (_strcmp(frst_potr, ";") == 0 || _strcmp(frst_potr, "\n") == 0
 || _strcmp(frst_potr, "&&") == 0)
 {
 if (*frst_potr == '&')
-*frst_potr++;
+*frst_potr = '\0';
+frst_potr++;
 }
 *frst_potr = '\0';
-while (*(frst_potr + 1) == '')
+while (*(frst_potr + 1) == ' ')
 frst_potr++;
 multi_command[argc++] = second_potr;
 second_potr = frst_potr + 1;
@@ -71,7 +72,7 @@ if (_strcmp(argv[0], "exit") == 0)
 xit_stas = EXIT_SUCCESS;
 if (argv[1] != NULL)
 {
-xit_stas = _atoi(argv[1]);
+xit_stas = _astoi(argv[1]);
 if (xit_stas < 0)
 exit(EXIT_FAILURE);
 exit(xit_stas);
@@ -86,6 +87,8 @@ while (*envcv != NULL)
 write(STDOUT_FILENO, *envcv, _strlen(*envcv));
 write(STDOUT_FILENO, "\n", 1);
 envcv++;
+}
+return (1);
 }
 return (0);
 }
