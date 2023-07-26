@@ -1,6 +1,18 @@
 #include <unistd.h>
 #include "vheadersh.h"
-
+/**
+ * exche_cute - function tat cll.
+ * other function to make command ready and execu.
+ * @argv_buffer: buffer that save argum
+ * @new_arg: full pah command.
+ * Return: void.
+ */
+void exche_cute(char *argv_buffer[], char *new_arg)
+{
+buiin_cmd(argv_buffer);
+ad_binprefx(argv_buffer, new_arg);
+crt_process(argv_buffer);
+}
 /**
  * hndmulti_cmd - function that hndles
  * input command and splt it eecuteble commnds.
@@ -76,18 +88,4 @@ write(STDOUT_FILENO, "\n", 1);
 envcv++;
 }
 return (0);
-}
-
-/**
- * exche_cute - function tat cll.
- * other function to make command ready and execu.
- * @argv_buffer: buffer that save argum
- * @new_arg: full pah command.
- * Return: void.
- */
-void exche_cute(char *argv_buffer[], char *new_arg)
-{
-buiin_cmd(argv_buffer);
-ad_binprefx(argv_buffer, new_arg);
-crt_process(argv_buffer);
 }
