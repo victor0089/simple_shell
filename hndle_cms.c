@@ -8,7 +8,7 @@
  * @multi_command: buffer that save commands.
  * Return: void.
  */
-void hndmulti_cmd(char *input_buffer, *multi_command[])
+void hndmulti_cmd(char *input_buffer, char *multi_command[])
 {
 char *frst_potr = NULL;
 char *second_potr = NULL;
@@ -85,7 +85,7 @@ return (0);
  * @new_arg: full pah command.
  * Return: void.
  */
-void exche_cute(char *argv_buffer[], *new_arg)
+void exche_cute(char *argv_buffer[], char *new_arg)
 {
 buiin_cmd(argv_buffer);
 ad_binprefx(argv_buffer, new_arg);
