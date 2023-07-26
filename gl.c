@@ -43,7 +43,7 @@ ssize_t input_buf(infooo_tt *inoo, char **buf, size_t *leen)
 }
 
 /**
- * geeet_inpput - gene minuine
+ * gt_inpt - gene minuine
  * @inoo: parametuct
  * Return: bytead
  */
@@ -152,7 +152,7 @@ int _gtln(infooo_tt *inoo, char **petre, size_t *lngth)
 }
 
 /**
- * sgntHandler - bloctrl-C
+ * sgntHndlr - bloctrl-C
  * @sig_num: the signmber
  * Return: void
  */
