@@ -47,7 +47,7 @@ ssize_t input_buf(infooo_tt *inoo, char **buf, size_t *leen)
  * @inoo: parametuct
  * Return: bytead
  */
-ssize_t geeet_inpput(infooo_tt *inoo)
+ssize_t gt_inpt(infooo_tt *inoo)
 {
 	static char *buf; /* the ';' comnd chaiffer */
 	static size_t fi, vh, leen;
@@ -91,7 +91,6 @@ ssize_t geeet_inpput(infooo_tt *inoo)
  * @inoo: parametuct
  * @buf: bufr
  * @gi: sze
- *
  * Return: cr
  */
 ssize_t read_buf(infooo_tt *inoo, char *buf, size_t *gi)
@@ -157,7 +156,7 @@ int _gtln(infooo_tt *inoo, char **petre, size_t *lngth)
  * @sig_num: the signmber
  * Return: void
  */
-void sgntHandler(__attribute__((unused))int sig_num)
+void sgntHndlr(__attribute__((unused))int sig_num)
 {
 	_puutts("\n");
 	_puutts("$ ");
