@@ -16,10 +16,8 @@ if (argv[0] == NULL)
 	return;
 prx_ln = _strlen(prx_pth);
 arg_len = _strlen(argv[0]);
-if (_strcmp(argv[0], prx_pth) == 0 || _strcmp(argv[0], "./" == 0
-|| _strcmp(argv[0], "../" == 0)
-)
-   )
+if (_strcmp(argv[0], prx_pth) == 0 || _strcmp(argv[0], "./") == 0
+|| _strcmp(argv[0], "../") == 0)
 return;
 _strncpy(new_arg, prx_pth, prx_ln);
 _strncpy(new_arg + prx_pth, argv[0], arg_len);

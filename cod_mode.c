@@ -15,7 +15,7 @@ char *argv_buffer[], char *new_arg)
 while (1)
 {
 write(STDOUT_FILENO, "$", 2);
-bytes = read(STDOUT_FILENO, input_buffer, MAX_LENGTH);
+bytes = read(STDOUT_FILENO, input_buffer, MAX_INPUTi_LENGTH);
 if (bytes == -1)
 {
 perror("Error reading from stdin");
@@ -62,12 +62,12 @@ wait(NULL);
  * nonive_mod - fun that handles a cmmmd from non intective mode.
  * @input_buffer: buffer that save input line.
  * @multi_cmmmd: arry of cmds.
- * @argv_butter: biffer that save arg.
+ * @argv_buffer: biffer that save arg.
  * @new_arg: full pah cmd.
  * Return: void
  */
 void nonive_mod(char *input_buffer, char *multi_cmmmd[],
-char *argv_butter[], char *new_arg)
+char *argv_buffer[], char *new_arg)
 {
 int bytes, ffd = 0;
 char *cmmmd;
@@ -78,8 +78,8 @@ hndmulti_cmd(input_buffer, multi_cmmmd);
 cmmmd = multi_cmmmd[0];
 while (cmmmd != NULL)
 {
-st_tok(cmmmd, "", argv_butter);
-exche_cute(argv_butter, new_arg);
+st_tok(cmmmd, "", argv_buffer);
+exche_cute(argv_buffer, new_arg);
 cmmmd = multi_cmmmd[++ffd];
 }
 }
