@@ -22,7 +22,7 @@ int buiin_cmd(char **argv);
 /* code */
 void inerive_mod(int bytes, char *input_buffer,
 char *argv_buffer[], char *new_arg);
-void nonive_mod(char *input_buffer, char *multi_command[],
+void nonive_mod(char *input_buffer, char *multi_commmd[],
 char *argv_buffer[], char *new_arg);
 /* code2 */
 void ad_binprefx(char *argv[], char *new_arg);
