@@ -1,6 +1,4 @@
-#include <unistd.h>
 #include "vheadersh.h"
-
 /**
  * ad_binprefx - function full path to command.
  * @argv: array of arguments.
