@@ -37,8 +37,5 @@ void hndmulti_cmd(char *input_buffer, char *multi_command[]);
 void _puutts(char *);
 int _putchar(char);
 /* line */
-ssize_t gt_inpt(infooo_tt *);
-int _gtln(infooo_tt *, char **, size_t *);
-void sgntHndlr(int);
 /* end of shell */
 #endif
