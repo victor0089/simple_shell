@@ -30,6 +30,7 @@ if (input_buffer != NULL)
 len = _strlen(input_buffer);
 while (len > 0 && input_buffer[len - 1] == ' ')
 input_buffer[--len] = '\0';
+}
 frst_potr = input_buffer;
 while (*frst_potr && *frst_potr == ' ')
 frst_potr++;
@@ -40,6 +41,7 @@ if (_strcmp(frst_potr, ";") == 0 || _strcmp(frst_potr, "\n") == 0
 || _strcmp(frst_potr, "&&") == 0)
 {
 if (*frst_potr == '&')
+{
 *frst_potr = '\0';
 frst_potr++;
 }
