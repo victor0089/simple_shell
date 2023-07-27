@@ -53,7 +53,7 @@ if (input_buffer[bytes - 1] == '\n')
 input_buffer[bytes - 1] = '\0';
 st_tok(input_buffer, " ", argv_buffer);
 if (argv_buffer[0] == NULL || *argv_buffer[0] == '\0'
-  || *argv_buffer[0] == ' ')
+|| *argv_buffer[0] == ' ')
 continue;
 exche_cute(argv_buffer, new_arg);
 }
