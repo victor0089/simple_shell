@@ -14,6 +14,7 @@
 #include <dirent.h>
 #include <signal.h>
 #include <limits.h>
+#include <string.h>
 extern char **environ;
 
 void crt_process(char *argv_buffer[]);
@@ -34,8 +35,6 @@ int _strcmp(char *gh1, char *gh2);
 int _astoi(char *s);
 /* code4 */
 void hndmulti_cmd(char *input_buffer, char *multi_command[]);
-void _puutts(char *);
-int _putchar(char);
 /* line */
 /* end of shell */
 #endif
