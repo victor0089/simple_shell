@@ -62,7 +62,6 @@ exche_cute(argv_buffer, new_arg);
  * crt_process - fun that creates a process and exectes a cmmd.
  * @argv_buffer: buffer that save arg.
  * Return: void.
- *
  */
 void crt_process(char *argv_buffer[])
 {
