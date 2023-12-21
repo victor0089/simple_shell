@@ -1,4 +1,5 @@
 #include "vheadersh.h"
+#include <errno.h>
 
 /**
  * main - entry point
@@ -22,7 +23,7 @@ int main(int ac, char **av)
 		fd = open(av[1], O_RDONLY);
 		if (fd == -1)
 		{
-			if (errno == EACCES)
+			if (errno == AT_EACCESS)
 				exit(126);
 			if (errno == ENOENT)
 			{
